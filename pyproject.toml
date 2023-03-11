@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "data-engineering"
+version = "0.0.1"
+description = ""
+authors = ["Tavin Alderson <study.neot@gmail.com>"]
+readme = "README.md"
+packages = [
+  { include = "inpython" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+pysrt = "^1.1.2"
+inflect = "^6.0.2"
+nltk = "^3.7"
+pandas = "^1.5.1"
+numpy = "^1.23.4"
+google-cloud-bigquery = "^3.4.0"
+python-snappy = "^0.6.1"
+aiohttp = "^3.8.3"
+aiodns = "^3.0.0"
+kafka-python = "^2.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pylint = "^2.15.5"
+black = "^22.10.0"
+jupyter = "^1.0.0"
+notebook = "^6.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
